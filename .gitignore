@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+build/
+.cache/
+
+# local environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# deployment/platform
+.vercel/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor/IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

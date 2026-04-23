@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="20" fill="#5A67D8"/>
+  <path d="M64 22l30 84h-16l-6-18H56l-6 18H34l30-84zm2 28l-6 20h12l-6-20z" fill="#FFFFFF"/>
+  <text x="64" y="116" text-anchor="middle" font-size="16" font-family="Arial, sans-serif" fill="#EDE9FE" font-weight="700">APIFY</text>
+</svg>
