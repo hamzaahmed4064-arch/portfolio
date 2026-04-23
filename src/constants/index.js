@@ -407,58 +407,6 @@ const projects = [
     live_project_link: "",
   },
   {
-    name: "Cincy Local and Live",
-    description:
-      "Client platform focused on local discovery and live experiences. Built with scalable backend services, responsive UX, and production-ready deployment workflows.",
-    tags: [
-      {
-        name: "Node.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Angular",
-        color: "green-text-gradient",
-      },
-      {
-        name: "AWS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Microservices",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: atsscreenerlanding,
-    source_code_link: "",
-    live_project_link: "",
-  },
-  {
-    name: "Tech Society Mobile Application",
-    description:
-      "Mobile application for community engagement, announcements, and event workflows. Delivered cross-platform with robust API integration and notification support.",
-    tags: [
-      {
-        name: "Ionic",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Angular",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Firebase",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: axelotlanding,
-    source_code_link: "",
-    live_project_link: "",
-  },
-  {
     name: "Teleflex Product Performance",
     description:
       "Data-driven performance tracking solution for product analytics and reporting. Designed to support business monitoring with reliable backend processing and dashboard-ready outputs.",
@@ -485,24 +433,24 @@ const projects = [
     live_project_link: "",
   },
   {
-    name: "Procamps",
+    name: "Campers",
     description:
-      "Client product focused on operational workflows and user engagement. Implemented full-stack modules with secure APIs, scalable architecture, and cloud deployment support.",
+      "ProCamps is a best-in-class event management and sports marketing company (founded in 1999) focused on high-level experiences for professional athletes and coaches across major leagues. The platform supports athlete-led appearances, youth camps, and specialized skills clinics while helping deliver authentic brand activations that connect fans, parents, and young athletes.",
     tags: [
       {
-        name: "NestJS",
+        name: "Event Management",
         color: "blue-text-gradient",
       },
       {
-        name: "TypeScript",
+        name: "Sports Marketing",
         color: "green-text-gradient",
       },
       {
-        name: "AWS",
+        name: "Athlete Experiences",
         color: "pink-text-gradient",
       },
       {
-        name: "Microservices",
+        name: "Camps & Clinics",
         color: "blue-text-gradient",
       },
     ],

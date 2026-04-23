@@ -31,7 +31,7 @@ const ProjectCard = ({
           <p className="text-center text-secondary text-[13px] leading-6">
             Client project visuals are confidential.
             <br />
-            Details can be shared on request.
+            Additional project details can be shared on request.
           </p>
 
           {source_code_link && (
@@ -133,7 +133,7 @@ const Works = () => {
           ))}
         </div>
         <p className="mt-8 text-center text-secondary text-[14px]">
-          More project case studies can be provided later on request.
+          More projects and case studies can be provided on request.
         </p>
       </motion.div>
     </section>
