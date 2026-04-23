@@ -1,6 +1,6 @@
 import profilepic from "./Image.jpeg";
 
-import logo from "./logo0.png";
+import logo from "./Image.jpeg";
 import backend from "./backend.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
