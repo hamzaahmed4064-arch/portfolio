@@ -255,6 +255,7 @@ const experiences = [
       "Built workflow automation pipelines with n8n to streamline integrations, notifications, and operational tasks.",
       "Implemented native mobile capabilities including push notifications, dynamic links, and deep-link routing.",
       "Built real-time chat and engagement modules with reliable event-driven backend processing.",
+      "Led Meradian platform security hardening by implementing OWASP-aligned auth/sanitization controls, stronger password policy + 2FA, and CORS/SSRF protections across app and cloud layers.",
       "Architected secure REST APIs and optimized performance for production-scale traffic and reliability.",
       "Managed App Store / Play Store deployments, release versioning, and AWS operations (EC2, S3, Lambda, CloudWatch).",
       "Mentored engineers, enforced clean code standards, and guided technical decisions for long-term scalability.",
@@ -354,6 +355,32 @@ const projects = [
     live_project_link: "",
   },
   {
+    name: "Meradian Platform Security & Auth Modernization",
+    description:
+      "Led end-to-end security hardening for a role-based web platform by implementing auth/sanitization controls, stronger password policy and 2FA flows, and CORS/SSRF protections across application and cloud layers. Standardized security patterns and documentation to improve OWASP-aligned compliance readiness and reduce review-to-release friction.",
+    tags: [
+      {
+        name: "Security Hardening",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "2FA/Auth",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CORS/SSRF",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: atsscreenerlanding,
+    source_code_link: "",
+    live_project_link: "",
+  },
+  {
     name: "Lorryz",
     description:
       "Logistics platform connecting shippers and carriers through mobile and web products. Included Ionic apps for drivers and customers, real-time tracking, and booking workflows integrated with backend APIs.",
@@ -376,32 +403,6 @@ const projects = [
       },
     ],
     image: axelotlanding,
-    source_code_link: "",
-    live_project_link: "",
-  },
-  {
-    name: "FarmGhar",
-    description:
-      "Livestock marketplace mobile app with listings, chat, and notification workflows. Led full deployment lifecycle from implementation to production release and support.",
-    tags: [
-      {
-        name: "Ionic",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Mobile Marketplace",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Chat/Notifications",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Deployment",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: netdashlanding,
     source_code_link: "",
     live_project_link: "",
   },
