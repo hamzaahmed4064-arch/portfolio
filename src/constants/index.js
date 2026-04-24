@@ -88,6 +88,10 @@ export const navLinks = [
     title: "Projects",
   },
   {
+    id: "case-studies",
+    title: "Case Studies",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -331,7 +335,7 @@ const projects = [
   {
     name: "MeridianSync",
     description:
-      "Event management platform delivered as a complete system (mobile app, admin panel, and backend). Built for real-time engagement with sessions, chat, notifications, and geofencing, while handling production constraints around background location services.",
+      "Case Study - Problem: The platform had runtime failures from schema/data mismatches, brittle auth/input handling, and incorrect bulk certificate generation. What I Built: I led full-stack hardening across mobile app, admin panel, and backend by adding idempotent DB migrations, fixing type/date mismatches, refining certificate logic to selected users only, and implementing region lifecycle management with soft deletes and guardrails. Impact: Eliminated critical flow-breaking errors, prevented unintended certificate issuance, and improved admin reliability and mobile usability.",
     tags: [
       {
         name: "Node.js",
@@ -357,7 +361,7 @@ const projects = [
   {
     name: "Meradian Platform Security & Auth Modernization",
     description:
-      "Led end-to-end security hardening for a role-based web platform by implementing auth/sanitization controls, stronger password policy and 2FA flows, and CORS/SSRF protections across application and cloud layers. Standardized security patterns and documentation to improve OWASP-aligned compliance readiness and reduce review-to-release friction.",
+      "Case Study - Problem: Security controls and auth behavior were inconsistent across UI, API boundaries, and cloud/network policy layers, increasing review and compliance risk. What I Built: Implemented OWASP-aligned hardening including sanitization in auth pages, stronger password policy with 2FA, and validated CORS/SSRF guardrails; also delivered consolidated architecture/security documentation and rollout playbooks. Impact: Reduced risk exposure, improved audit/compliance readiness, and lowered review-to-release friction for stakeholders.",
     tags: [
       {
         name: "Security Hardening",
@@ -383,7 +387,7 @@ const projects = [
   {
     name: "Lorryz",
     description:
-      "Logistics platform connecting shippers and carriers through mobile and web products. Included Ionic apps for drivers and customers, real-time tracking, and booking workflows integrated with backend APIs.",
+      "Case Study - Problem: A trucking marketplace (Uber-like for freight) needed reliable live operations, including background driver tracking and booking continuity under real-world mobile/network constraints. What I Built: Developed Ionic apps and backend-integrated workflows for real-time shipment visibility, background location tracking, push notifications, dynamic links/deep links, and booking flows for drivers and customers. Impact: Improved dispatch transparency and user engagement, while enabling stable production releases to both App Store and Play Store.",
     tags: [
       {
         name: "Ionic",
@@ -409,7 +413,7 @@ const projects = [
   {
     name: "Teleflex Product Performance",
     description:
-      "Data-driven performance tracking solution for product analytics and reporting. Designed to support business monitoring with reliable backend processing and dashboard-ready outputs.",
+      "Case Study - Problem: Product teams needed trustworthy performance reporting instead of fragmented operational data. What I Built: Implemented backend processing and API-driven reporting flows to normalize performance signals into dashboard-ready outputs with reliable data pipelines. Impact: Improved decision-making speed and confidence through clearer product-performance visibility.",
     tags: [
       {
         name: "Analytics",
@@ -435,7 +439,7 @@ const projects = [
   {
     name: "Campers",
     description:
-      "ProCamps is a best-in-class event management and sports marketing company (founded in 1999) focused on high-level experiences for professional athletes and coaches across major leagues. The platform supports athlete-led appearances, youth camps, and specialized skills clinics while helping deliver authentic brand activations that connect fans, parents, and young athletes.",
+      "Case Study - Problem: Event and sports-marketing workflows needed scalable digital support for athlete-led experiences, youth clinics, and stakeholder coordination. What I Built: Delivered platform modules and API integrations to support camp/clinic operations, participant-facing workflows, and brand-activation-aligned event management journeys. Impact: Enabled smoother event execution and stronger fan/participant experience across recurring programs.",
     tags: [
       {
         name: "Event Management",
@@ -461,7 +465,7 @@ const projects = [
   {
     name: "Meridian Document Library",
     description:
-      "Document management and retrieval platform built for organized access and collaboration. Included structured storage, search-friendly APIs, and role-aware workflows.",
+      "Case Study - Problem: Teams lacked a consistent, role-aware document retrieval workflow, causing delays and access confusion. What I Built: Designed structured storage and search-focused APIs with role-based access flows for secure collaboration and faster retrieval. Impact: Improved document discoverability, reduced manual lookup overhead, and strengthened governance for shared records.",
     tags: [
       {
         name: "Node.js",
@@ -483,6 +487,59 @@ const projects = [
     image: securebankdashboard,
     source_code_link: "",
     live_project_link: "",
+  },
+];
+
+const caseStudies = [
+  {
+    title: "MeridianSync",
+    problem:
+      "Runtime failures from schema/data mismatches, brittle auth/input handling, and incorrect bulk certificate generation.",
+    solution:
+      "Led full-stack hardening with idempotent migrations, type/date sanitization, certificate eligibility fixes, and region lifecycle management with guardrails.",
+    impact:
+      "Eliminated critical flow-breaking errors, prevented unintended certificate issuance, and improved admin reliability and mobile usability.",
+    stack: ["Node.js", "Express", "Sequelize", "PostgreSQL", "Angular", "Ionic", "AWS", "Firebase"],
+  },
+  {
+    title: "Meradian Platform Security & Auth Modernization",
+    problem:
+      "Inconsistent security controls across frontend, API boundaries, and cloud/network policies increased compliance and release risk.",
+    solution:
+      "Implemented OWASP-aligned hardening: sanitization in auth flows, stronger password policy + 2FA, CORS/SSRF guardrails, and consolidated architecture/security implementation docs.",
+    impact:
+      "Reduced risk exposure, improved audit/compliance readiness, and lowered review-to-release friction across teams.",
+    stack: ["Node.js", "AWS", "AuthN/AuthZ", "2FA", "CORS", "SSRF Protection"],
+  },
+  {
+    title: "Lorryz (Uber-like for Freight)",
+    problem:
+      "A trucking marketplace needed reliable background location tracking and operational continuity under real-world mobile/network constraints.",
+    solution:
+      "Built Ionic apps and backend-integrated workflows for real-time shipment visibility, background tracking, push notifications, dynamic links/deep links, and booking flows.",
+    impact:
+      "Improved dispatch transparency and user engagement while supporting stable production releases on both App Store and Play Store.",
+    stack: ["Ionic", "Angular", "Node.js", "Realtime Tracking", "Push Notifications", "Dynamic Links"],
+  },
+  {
+    title: "Teleflex Product Performance",
+    problem:
+      "Product teams lacked reliable, unified performance reporting and were making decisions from fragmented operational data.",
+    solution:
+      "Implemented backend processing and API-driven reporting pipelines that normalized raw performance signals into dashboard-ready outputs.",
+    impact:
+      "Improved decision-making speed and confidence through cleaner product-performance visibility.",
+    stack: ["Node.js", "PostgreSQL", "AWS", "REST APIs"],
+  },
+  {
+    title: "Meridian Document Library",
+    problem:
+      "Teams had inconsistent, role-unsafe document retrieval workflows that slowed collaboration and increased lookup effort.",
+    solution:
+      "Designed structured storage and search-focused APIs with role-based access behavior for secure and predictable document workflows.",
+    impact:
+      "Improved document discoverability, reduced manual lookup overhead, and strengthened governance of shared records.",
+    stack: ["Node.js", "PostgreSQL", "AWS S3", "REST APIs"],
   },
 ];
 
@@ -522,6 +579,7 @@ export {
   experiences,
   extracurricular,
   projects,
+  caseStudies,
   education,
   testimonials
 };

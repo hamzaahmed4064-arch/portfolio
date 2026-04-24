@@ -12,6 +12,7 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Extracurricular from "./Extracurricular";
 import Works from "./Works";
+import CaseStudies from "./CaseStudies";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 
@@ -24,6 +25,7 @@ export {
   Experience,
   Extracurricular,
   Works,
+  CaseStudies,
   Contact,
   CanvasLoader,
   EarthCanvas,
