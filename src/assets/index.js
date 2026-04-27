@@ -80,8 +80,7 @@ import knifethrowimage from "./knifethrow_demonstration.jpg"
 import atsscreenerlanding from "./atsscreenerlanding.png"
 // import enterpriseapitester from "./enterpriseapiui.png"
  
-// Use the stable route; dev/prod redirect to /resume/<basename>
-const resume = "/resume";
+const resume = "https://drive.google.com/file/d/13Kn8vqa1Ar6-K_qw6SZFaLQCQlSgjbO8/view?usp=sharing";
 import awsdbcert from "./AWS Database Specialty Certified - Sunny Jayendra Patel.jpg"
 import connectwisecert from "./Connectwise-Scripting-Certification.pdf"
 

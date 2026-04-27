@@ -16,7 +16,7 @@ function App() {
           <About />
           <Education />
           <Experience />
-          <Extracurricular />
+          {/* <Extracurricular /> */}
           <Tech />
           <Works />
           <CaseStudies />
