@@ -343,6 +343,10 @@ const projects = [
       "Event management platform delivered as a complete system (mobile app, admin panel, and backend). Built for real-time engagement with sessions, chat, notifications, and geofencing, while handling production constraints around background location services.",
     tags: [
       {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
         name: "Node.js",
         color: "blue-text-gradient",
       },
@@ -395,19 +399,19 @@ const projects = [
       "Livestock marketplace mobile app with listings, chat, and notification workflows. Led full deployment lifecycle from implementation to production release and support.",
     tags: [
       {
-        name: "Ionic",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "Mobile Marketplace",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "Chat/Notifications",
+        name: "Mobile Marketplace",
         color: "pink-text-gradient",
       },
       {
-        name: "Deployment",
+        name: "Chat/Notifications",
         color: "blue-text-gradient",
       },
     ],

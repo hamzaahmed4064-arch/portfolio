@@ -73,7 +73,7 @@ const Hero = () => {
     "Senior Full Stack Developer",
     "React Native Developer",
     "Mobile App Developer",
-    "Ionic + Angular Specialist",
+    "Hybrid App Developer",
     "Team Lead"
   ];
 
@@ -110,7 +110,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm a <TypewriterText texts={typedItems} />
             <br />
-            <b>Building scalable mobile and web applications with React Native, Angular, Ionic, and Node.js.</b>
+            <b>Building scalable mobile and web applications with React Native and Node.js.</b>
           </p>
         </div>
       </div>
