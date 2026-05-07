@@ -6,7 +6,7 @@ import { motion, useAnimation, useInView } from "framer-motion"
 import { styles } from "../styles"
 import { SectionWrapper } from "../hoc"
 import { fadeIn } from "../utils/motion"
-import { resume, profilepic } from "../assets"
+import { profilepic } from "../assets"
 
 const ServiceCard = ({ index, title, icon }) => (
   <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="w-full xs:w-[250px]">
@@ -94,7 +94,7 @@ const About = () => {
               className="px-6 py-3 font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-md shadow-[0_5px_0_0_rgba(0,0,0,0.6)] transition-all duration-100 ease-in-out hover:shadow-[0_3px_0_0_rgba(0,0,0,0.6)] hover:translate-y-[2px] active:translate-y-1 active:shadow-none select-none"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => window.open(resume, "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/1ZBc-oaES7Tdlmx1ZnrynGZv5ZOXVQZNU/view?usp=sharing", "_blank")}
             >
               Resume
             </motion.button>
