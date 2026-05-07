@@ -199,6 +199,9 @@ const Works = () => {
           ))}
         </div>
 
+        <span className="hash-span" id="projects">
+          &nbsp;
+        </span>
         <h3 className={`${styles.sectionHeadText} text-center mt-16`}>Projects.</h3>
         <div
           className="mt-8 grid grid-cols-1 gap-4 place-items-center md:flex md:flex-wrap md:justify-center md:gap-7"
@@ -217,4 +220,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "projects");
+export default SectionWrapper(Works, "case-studies");
