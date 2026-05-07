@@ -87,14 +87,10 @@ export const navLinks = [
     id: "projects",
     title: "Projects",
   },
-  {
-    id: "case-studies",
-    title: "Case Studies",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  // {
+  //   id: "contact",
+  //   title: "Contact",
+  // },
 ];
 
 const services = [
@@ -132,6 +128,10 @@ const education = [
 
 const technologies = [
   {
+    name: "React Native",
+    icon: reactjs,
+  },
+  {
     name: "Angular",
     icon: reactjs,
   },
@@ -165,6 +165,10 @@ const technologies = [
   },
   {
     name: "Firebase",
+    icon: google,
+  },
+  {
+    name: "Firebase Cloud Functions",
     icon: google,
   },
   {
@@ -254,12 +258,13 @@ const experiences = [
     iconBg: "#fff",
     date: "Dec 2022 - Present",
     points: [
-      "Led development of scalable web and mobile products using React, Angular, Ionic, and Node.js.",
+      "Led development of scalable web and mobile products using React Native, React, Angular, Ionic, and Node.js.",
       "Designed and implemented microservices architecture with NestJS for modular, maintainable backend services.",
       "Built workflow automation pipelines with n8n to streamline integrations, notifications, and operational tasks.",
+      "Used AI-assisted development workflows with Cursor and Claude for faster delivery, refactoring, and quality improvements.",
       "Implemented native mobile capabilities including push notifications, dynamic links, and deep-link routing.",
       "Built real-time chat and engagement modules with reliable event-driven backend processing.",
-      "Led Meradian platform security hardening by implementing OWASP-aligned auth/sanitization controls, stronger password policy + 2FA, and CORS/SSRF protections across app and cloud layers.",
+      "Developed serverless handlers and background processes using Firebase Cloud Functions.",
       "Architected secure REST APIs and optimized performance for production-scale traffic and reliability.",
       "Managed App Store / Play Store deployments, release versioning, and AWS operations (EC2, S3, Lambda, CloudWatch).",
       "Mentored engineers, enforced clean code standards, and guided technical decisions for long-term scalability.",
@@ -335,7 +340,7 @@ const projects = [
   {
     name: "MeridianSync",
     description:
-      "Case Study - Problem: The platform had runtime failures from schema/data mismatches, brittle auth/input handling, and incorrect bulk certificate generation. What I Built: I led full-stack hardening across mobile app, admin panel, and backend by adding idempotent DB migrations, fixing type/date mismatches, refining certificate logic to selected users only, and implementing region lifecycle management with soft deletes and guardrails. Impact: Eliminated critical flow-breaking errors, prevented unintended certificate issuance, and improved admin reliability and mobile usability.",
+      "Event management platform delivered as a complete system (mobile app, admin panel, and backend). Built for real-time engagement with sessions, chat, notifications, and geofencing, while handling production constraints around background location services.",
     tags: [
       {
         name: "Node.js",
@@ -359,35 +364,9 @@ const projects = [
     live_project_link: "",
   },
   {
-    name: "Meradian Platform Security & Auth Modernization",
-    description:
-      "Case Study - Problem: Security controls and auth behavior were inconsistent across UI, API boundaries, and cloud/network policy layers, increasing review and compliance risk. What I Built: Implemented OWASP-aligned hardening including sanitization in auth pages, stronger password policy with 2FA, and validated CORS/SSRF guardrails; also delivered consolidated architecture/security documentation and rollout playbooks. Impact: Reduced risk exposure, improved audit/compliance readiness, and lowered review-to-release friction for stakeholders.",
-    tags: [
-      {
-        name: "Security Hardening",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "2FA/Auth",
-        color: "green-text-gradient",
-      },
-      {
-        name: "CORS/SSRF",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "AWS",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: atsscreenerlanding,
-    source_code_link: "",
-    live_project_link: "",
-  },
-  {
     name: "Lorryz",
     description:
-      "Case Study - Problem: A trucking marketplace (Uber-like for freight) needed reliable live operations, including background driver tracking and booking continuity under real-world mobile/network constraints. What I Built: Developed Ionic apps and backend-integrated workflows for real-time shipment visibility, background location tracking, push notifications, dynamic links/deep links, and booking flows for drivers and customers. Impact: Improved dispatch transparency and user engagement, while enabling stable production releases to both App Store and Play Store.",
+      "Logistics platform connecting shippers and carriers through mobile and web products. Included Ionic apps for drivers and customers, real-time tracking, and booking workflows integrated with backend APIs.",
     tags: [
       {
         name: "Ionic",
@@ -411,9 +390,87 @@ const projects = [
     live_project_link: "",
   },
   {
+    name: "FarmGhar",
+    description:
+      "Livestock marketplace mobile app with listings, chat, and notification workflows. Led full deployment lifecycle from implementation to production release and support.",
+    tags: [
+      {
+        name: "Ionic",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mobile Marketplace",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Chat/Notifications",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Deployment",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: netdashlanding,
+    source_code_link: "",
+    live_project_link: "",
+  },
+  {
+    name: "Cincy Local and Live",
+    description:
+      "Client platform focused on local discovery and live experiences. Built with scalable backend services, responsive UX, and production-ready deployment workflows.",
+    tags: [
+      {
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Angular",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Microservices",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: atsscreenerlanding,
+    source_code_link: "",
+    live_project_link: "",
+  },
+  {
+    name: "Tech Society Mobile Application",
+    description:
+      "Mobile application for community engagement, announcements, and event workflows. Delivered cross-platform with robust API integration and notification support.",
+    tags: [
+      {
+        name: "Ionic",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Angular",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: axelotlanding,
+    source_code_link: "",
+    live_project_link: "",
+  },
+  {
     name: "Teleflex Product Performance",
     description:
-      "Case Study - Problem: Product teams needed trustworthy performance reporting instead of fragmented operational data. What I Built: Implemented backend processing and API-driven reporting flows to normalize performance signals into dashboard-ready outputs with reliable data pipelines. Impact: Improved decision-making speed and confidence through clearer product-performance visibility.",
+      "Data-driven performance tracking solution for product analytics and reporting. Designed to support business monitoring with reliable backend processing and dashboard-ready outputs.",
     tags: [
       {
         name: "Analytics",
@@ -437,24 +494,24 @@ const projects = [
     live_project_link: "",
   },
   {
-    name: "Campers",
+    name: "Procamps",
     description:
-      "Case Study - Problem: Event and sports-marketing workflows needed scalable digital support for athlete-led experiences, youth clinics, and stakeholder coordination. What I Built: Delivered platform modules and API integrations to support camp/clinic operations, participant-facing workflows, and brand-activation-aligned event management journeys. Impact: Enabled smoother event execution and stronger fan/participant experience across recurring programs.",
+      "Client product focused on operational workflows and user engagement. Implemented full-stack modules with secure APIs, scalable architecture, and cloud deployment support.",
     tags: [
       {
-        name: "Event Management",
+        name: "NestJS",
         color: "blue-text-gradient",
       },
       {
-        name: "Sports Marketing",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "Athlete Experiences",
+        name: "AWS",
         color: "pink-text-gradient",
       },
       {
-        name: "Camps & Clinics",
+        name: "Microservices",
         color: "blue-text-gradient",
       },
     ],
@@ -465,7 +522,7 @@ const projects = [
   {
     name: "Meridian Document Library",
     description:
-      "Case Study - Problem: Teams lacked a consistent, role-aware document retrieval workflow, causing delays and access confusion. What I Built: Designed structured storage and search-focused APIs with role-based access flows for secure collaboration and faster retrieval. Impact: Improved document discoverability, reduced manual lookup overhead, and strengthened governance for shared records.",
+      "Document management and retrieval platform built for organized access and collaboration. Included structured storage, search-friendly APIs, and role-aware workflows.",
     tags: [
       {
         name: "Node.js",
@@ -487,59 +544,6 @@ const projects = [
     image: securebankdashboard,
     source_code_link: "",
     live_project_link: "",
-  },
-];
-
-const caseStudies = [
-  {
-    title: "MeridianSync",
-    problem:
-      "Runtime failures from schema/data mismatches, brittle auth/input handling, and incorrect bulk certificate generation.",
-    solution:
-      "Led full-stack hardening with idempotent migrations, type/date sanitization, certificate eligibility fixes, and region lifecycle management with guardrails.",
-    impact:
-      "Eliminated critical flow-breaking errors, prevented unintended certificate issuance, and improved admin reliability and mobile usability.",
-    stack: ["Node.js", "Express", "Sequelize", "PostgreSQL", "Angular", "Ionic", "AWS", "Firebase"],
-  },
-  {
-    title: "Meradian Platform Security & Auth Modernization",
-    problem:
-      "Inconsistent security controls across frontend, API boundaries, and cloud/network policies increased compliance and release risk.",
-    solution:
-      "Implemented OWASP-aligned hardening: sanitization in auth flows, stronger password policy + 2FA, CORS/SSRF guardrails, and consolidated architecture/security implementation docs.",
-    impact:
-      "Reduced risk exposure, improved audit/compliance readiness, and lowered review-to-release friction across teams.",
-    stack: ["Node.js", "AWS", "AuthN/AuthZ", "2FA", "CORS", "SSRF Protection"],
-  },
-  {
-    title: "Lorryz (Uber-like for Freight)",
-    problem:
-      "A trucking marketplace needed reliable background location tracking and operational continuity under real-world mobile/network constraints.",
-    solution:
-      "Built Ionic apps and backend-integrated workflows for real-time shipment visibility, background tracking, push notifications, dynamic links/deep links, and booking flows.",
-    impact:
-      "Improved dispatch transparency and user engagement while supporting stable production releases on both App Store and Play Store.",
-    stack: ["Ionic", "Angular", "Node.js", "Realtime Tracking", "Push Notifications", "Dynamic Links"],
-  },
-  {
-    title: "Teleflex Product Performance",
-    problem:
-      "Product teams lacked reliable, unified performance reporting and were making decisions from fragmented operational data.",
-    solution:
-      "Implemented backend processing and API-driven reporting pipelines that normalized raw performance signals into dashboard-ready outputs.",
-    impact:
-      "Improved decision-making speed and confidence through cleaner product-performance visibility.",
-    stack: ["Node.js", "PostgreSQL", "AWS", "REST APIs"],
-  },
-  {
-    title: "Meridian Document Library",
-    problem:
-      "Teams had inconsistent, role-unsafe document retrieval workflows that slowed collaboration and increased lookup effort.",
-    solution:
-      "Designed structured storage and search-focused APIs with role-based access behavior for secure and predictable document workflows.",
-    impact:
-      "Improved document discoverability, reduced manual lookup overhead, and strengthened governance of shared records.",
-    stack: ["Node.js", "PostgreSQL", "AWS S3", "REST APIs"],
   },
 ];
 
@@ -579,7 +583,6 @@ export {
   experiences,
   extracurricular,
   projects,
-  caseStudies,
   education,
   testimonials
 };
