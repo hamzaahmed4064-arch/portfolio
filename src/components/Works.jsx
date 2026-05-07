@@ -71,7 +71,12 @@ const ProjectCard = ({
   animate,
 }) => {
   return (
-    <motion.div variants={animate}>
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={animate}
+    >
       <Tilt
         options={{
           max: 45,
@@ -165,7 +170,11 @@ const Works = () => {
         <h3 className={`${styles.sectionHeadText} text-center`}>Case Studies.</h3>
       </motion.div>
 
-      <motion.div>
+      <motion.div
+        initial="hidden"
+        animate={mainControls}
+        variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } }}
+      >
         <div className="mt-8 grid grid-cols-1 gap-6">
           {caseStudies.map((study) => (
             <div key={study.title} className="bg-tertiary rounded-2xl p-6 border border-white/10">
@@ -192,24 +201,17 @@ const Works = () => {
 
         <h3 className={`${styles.sectionHeadText} text-center mt-16`}>Projects.</h3>
         <div
-          className={`${
-            window.innerWidth <= 768
-              ? "grid grid-cols-1 gap-4 place-items-center"
-              : "flex flex-wrap gap-7"
-          }`}
+          className="mt-8 grid grid-cols-1 gap-4 place-items-center md:flex md:flex-wrap md:justify-center md:gap-7"
         >
           {projects.map((project, index) => (
             <ProjectCard
               key={`project-${index}`}
-              animate={
-                window.innerWidth <= 768
-                  ? {}
-                  : fadeIn("up", "spring", index * 0.5, 0.75)
-              }
+              animate={fadeIn("up", "spring", index * 0.5, 0.75)}
               {...project}
             />
           ))}
         </div>
+
       </motion.div>
     </section>
   );
