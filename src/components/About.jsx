@@ -134,8 +134,8 @@ const About = () => {
             <motion.li className="flex items-start" variants={fadeIn("up", "spring", 0.2, 0.75)}>
               <span className="mr-4 text-2xl flex-shrink-0">🎓</span>
               <span>
-                My core stack is  Angular, Ionic, React Native, and Node.js, with strong experience shipping
-                production-grade apps to both the App Store and Play Store.
+                My core focus is Hybrid App Development, with strong experience shipping production-grade apps to both
+                the App Store and Play Store.
               </span>
             </motion.li>
             <motion.li className="flex items-start" variants={fadeIn("up", "spring", 0.3, 0.75)}>
