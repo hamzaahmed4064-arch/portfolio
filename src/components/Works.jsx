@@ -132,9 +132,6 @@ const Works = () => {
             />
           ))}
         </div>
-        <p className="mt-8 text-center text-secondary text-[14px]">
-          More project case studies can be provided later on request.
-        </p>
       </motion.div>
     </section>
   );
