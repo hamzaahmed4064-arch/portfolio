@@ -8,6 +8,59 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn } from "../utils/motion";
 
+const caseStudies = [
+  {
+    title: "MeridianSync",
+    problem:
+      "Runtime failures from schema/data mismatches, brittle auth/input handling, and incorrect bulk certificate generation.",
+    built:
+      "Led full-stack hardening with idempotent migrations, type/date sanitization, certificate eligibility fixes, and region lifecycle management with guardrails.",
+    impact:
+      "Eliminated critical flow-breaking errors, prevented unintended certificate issuance, and improved admin reliability and mobile usability.",
+    tech: ["Node.js", "Express", "Sequelize", "PostgreSQL", "Angular", "Ionic", "AWS", "Firebase"],
+  },
+  {
+    title: "Meridian Platform Security & Auth Modernization",
+    problem:
+      "Inconsistent security controls across frontend, API boundaries, and cloud/network policies increased compliance and release risk.",
+    built:
+      "Implemented OWASP-aligned hardening: sanitization in auth flows, stronger password policy + 2FA, CORS/SSRF guardrails, and consolidated architecture/security implementation docs.",
+    impact:
+      "Reduced risk exposure, improved audit/compliance readiness, and lowered review-to-release friction across teams.",
+    tech: ["Node.js", "AWS", "AuthN/AuthZ", "2FA", "CORS", "SSRF Protection"],
+  },
+  {
+    title: "Lorryz (Uber-like for Freight)",
+    problem:
+      "A trucking marketplace needed reliable background location tracking and operational continuity under real-world mobile/network constraints.",
+    built:
+      "Built Ionic apps and backend-integrated workflows for real-time shipment visibility, background tracking, push notifications, dynamic links/deep links, and booking flows.",
+    impact:
+      "Improved dispatch transparency and user engagement while supporting stable production releases on both App Store and Play Store.",
+    tech: ["Ionic", "Angular", "Node.js", "Realtime Tracking", "Push Notifications", "Dynamic Links"],
+  },
+  {
+    title: "Teleflex Product Performance",
+    problem:
+      "Product teams lacked reliable, unified performance reporting and were making decisions from fragmented operational data.",
+    built:
+      "Implemented backend processing and API-driven reporting pipelines that normalized raw performance signals into dashboard-ready outputs.",
+    impact:
+      "Improved decision-making speed and confidence through cleaner product-performance visibility.",
+    tech: ["Node.js", "PostgreSQL", "AWS", "REST APIs"],
+  },
+  {
+    title: "Meridian Document Library",
+    problem:
+      "Teams had inconsistent, role-unsafe document retrieval workflows that slowed collaboration and increased lookup effort.",
+    built:
+      "Designed structured storage and search-focused APIs with role-based access behavior for secure and predictable document workflows.",
+    impact:
+      "Improved document discoverability, reduced manual lookup overhead, and strengthened governance of shared records.",
+    tech: ["Node.js", "PostgreSQL", "AWS S3", "REST APIs"],
+  },
+];
+
 const ProjectCard = ({
   name,
   description,
@@ -97,7 +150,7 @@ const Works = () => {
         }}
       >
         <h3 className={`${styles.sectionSubText} text-center`}>
-          Innovative Creations
+          Fact-Based Delivery
         </h3>
       </motion.div>
 
@@ -109,10 +162,35 @@ const Works = () => {
           visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
         }}
       >
-        <h3 className={`${styles.sectionHeadText} text-center`}>Projects.</h3>
+        <h3 className={`${styles.sectionHeadText} text-center`}>Case Studies.</h3>
       </motion.div>
 
       <motion.div>
+        <div className="mt-8 grid grid-cols-1 gap-6">
+          {caseStudies.map((study) => (
+            <div key={study.title} className="bg-tertiary rounded-2xl p-6 border border-white/10">
+              <h4 className="text-white font-bold text-[22px]">{study.title}</h4>
+              <p className="mt-3 text-secondary text-[14px] leading-7">
+                <span className="text-white font-semibold">Problem:</span> {study.problem}
+              </p>
+              <p className="mt-2 text-secondary text-[14px] leading-7">
+                <span className="text-white font-semibold">What I built:</span> {study.built}
+              </p>
+              <p className="mt-2 text-secondary text-[14px] leading-7">
+                <span className="text-white font-semibold">Impact:</span> {study.impact}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {study.tech.map((item) => (
+                  <p key={`${study.title}-${item}`} className="text-[13px] text-purple-300">
+                    #{item}
+                  </p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <h3 className={`${styles.sectionHeadText} text-center mt-16`}>Projects.</h3>
         <div
           className={`${
             window.innerWidth <= 768

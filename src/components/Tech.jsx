@@ -26,6 +26,7 @@ import {
 const ICONS = {
   microservices: "https://cdn.simpleicons.org/kubernetes/326CE5",
   nestjs: "https://cdn.simpleicons.org/nestjs/E0234E",
+  reactnative: "https://cdn.simpleicons.org/react/61DAFB",
   javascript: "https://cdn.simpleicons.org/javascript/F7DF1E",
   typescript: "https://cdn.simpleicons.org/typescript/3178C6",
   firebase: "https://cdn.simpleicons.org/firebase/FFCA28",
@@ -42,11 +43,14 @@ const ICONS = {
   azure: "https://cdn.simpleicons.org/microsoftazure/0078D4",
   n8n: n8nIcon,
   apify: apifyIcon,
+  cursor: "https://cdn.simpleicons.org/cursor/ffffff",
+  claude: "https://cdn.simpleicons.org/anthropic/ffffff",
 };
 
 const programming = [
   { name: "Microservices Architecture", icon: ICONS.microservices, fallbackIcon: backend },
   { name: "NestJS", icon: ICONS.nestjs, fallbackIcon: backend },
+  { name: "React Native", icon: ICONS.reactnative, fallbackIcon: reactjs },
   { name: "JavaScript", icon: ICONS.javascript, fallbackIcon: javascript },
   { name: "TypeScript", icon: ICONS.typescript, fallbackIcon: typescript },
   { name: "Firebase", icon: ICONS.firebase, fallbackIcon: connectwise },
@@ -65,15 +69,23 @@ const cloudAndDevOps = [
   { name: "Amazon Cognito", icon: ICONS.aws, fallbackIcon: aws },
   { name: "AWS", icon: ICONS.aws, fallbackIcon: aws },
   { name: "Azure", icon: ICONS.azure, fallbackIcon: azure },
-  { name: "Firebase Functions", icon: ICONS.firebase, fallbackIcon: connectwise },
+  { name: "Firebase Cloud Functions", icon: ICONS.firebase, fallbackIcon: connectwise },
   { name: "n8n", icon: ICONS.n8n, fallbackIcon: connectwise },
   { name: "Apify", icon: ICONS.apify, fallbackIcon: javascript },
+];
+
+const automationAndAI = [
+  { name: "n8n Workflows", icon: ICONS.n8n, fallbackIcon: connectwise },
+  { name: "Cursor", icon: ICONS.cursor, fallbackIcon: javascript },
+  { name: "Claude", icon: ICONS.claude, fallbackIcon: javascript },
+  { name: "Prompt Engineering", icon: ICONS.javascript, fallbackIcon: javascript },
 ];
 
 const Tech = () => {
   const [rows, setRows] = useState({
     programming: [],
     cloudAndDevOps: [],
+    automationAndAI: [],
   });
   const [isMobile, setIsMobile] = useState(false);
 
@@ -118,6 +130,7 @@ const Tech = () => {
       const rowsData = {
         programming: calculateRows(currentWidth, programming),
         cloudAndDevOps: calculateRows(currentWidth, cloudAndDevOps),
+        automationAndAI: calculateRows(currentWidth, automationAndAI),
       };
       setRows(rowsData);
     };
@@ -241,6 +254,7 @@ const Tech = () => {
         </motion.div>
         {renderCategory("Programming", rows.programming)}
         {renderCategory("Cloud & DevOps", rows.cloudAndDevOps)}
+        {renderCategory("Automation & AI", rows.automationAndAI)}
       </div>
     </section>
   );

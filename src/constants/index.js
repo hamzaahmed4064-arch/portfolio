@@ -128,6 +128,10 @@ const education = [
 
 const technologies = [
   {
+    name: "React Native",
+    icon: reactjs,
+  },
+  {
     name: "Angular",
     icon: reactjs,
   },
@@ -161,6 +165,10 @@ const technologies = [
   },
   {
     name: "Firebase",
+    icon: google,
+  },
+  {
+    name: "Firebase Cloud Functions",
     icon: google,
   },
   {
@@ -250,11 +258,13 @@ const experiences = [
     iconBg: "#fff",
     date: "Dec 2022 - Present",
     points: [
-      "Led development of scalable web and mobile products using React, Angular, Ionic, and Node.js.",
+      "Led development of scalable web and mobile products using React Native, React, Angular, Ionic, and Node.js.",
       "Designed and implemented microservices architecture with NestJS for modular, maintainable backend services.",
       "Built workflow automation pipelines with n8n to streamline integrations, notifications, and operational tasks.",
+      "Used AI-assisted development workflows with Cursor and Claude for faster delivery, refactoring, and quality improvements.",
       "Implemented native mobile capabilities including push notifications, dynamic links, and deep-link routing.",
       "Built real-time chat and engagement modules with reliable event-driven backend processing.",
+      "Developed serverless handlers and background processes using Firebase Cloud Functions.",
       "Architected secure REST APIs and optimized performance for production-scale traffic and reliability.",
       "Managed App Store / Play Store deployments, release versioning, and AWS operations (EC2, S3, Lambda, CloudWatch).",
       "Mentored engineers, enforced clean code standards, and guided technical decisions for long-term scalability.",

@@ -134,8 +134,8 @@ const About = () => {
             <motion.li className="flex items-start" variants={fadeIn("up", "spring", 0.2, 0.75)}>
               <span className="mr-4 text-2xl flex-shrink-0">🎓</span>
               <span>
-                My core stack is Angular, Ionic, and Node.js, with strong experience shipping production-grade apps to
-                both the App Store and Play Store.
+                My core stack is  Angular, Ionic, React Native, and Node.js, with strong experience shipping
+                production-grade apps to both the App Store and Play Store.
               </span>
             </motion.li>
             <motion.li className="flex items-start" variants={fadeIn("up", "spring", 0.3, 0.75)}>
@@ -149,12 +149,15 @@ const About = () => {
               <span className="mr-4 text-2xl flex-shrink-0">🔧</span>
               <span>
                 I&apos;ve built systems with geolocation, chat, push notifications, dynamic links, native integrations,
-                and cloud services using AWS and Firebase.
+                and cloud services using AWS, Firebase, and Firebase Cloud Functions.
               </span>
             </motion.li>
             <motion.li className="flex items-start" variants={fadeIn("up", "spring", 0.5, 0.75)}>
               <span className="mr-4 text-2xl flex-shrink-0">💡</span>
-              <span>I mentor developers and focus on clean, scalable engineering practices in Agile teams.</span>
+              <span>
+                I mentor developers and combine clean engineering practices with n8n automation and AI-assisted
+                workflows using Cursor and Claude.
+              </span>
             </motion.li>
           </motion.ul>
         </motion.div>
